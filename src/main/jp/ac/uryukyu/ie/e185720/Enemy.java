@@ -30,10 +30,10 @@ public class Enemy extends LivingThing{
      * @param damage 受けたダメージ
      */
     public void wounded(int damage){
-        hitPoint -= damage;
-        if( hitPoint < 0 ) {
-            dead = true;
-            System.out.printf("モンスター%sは倒れた。\n", name);
+        damageVal(damage);
+        if(damageVal(damage) < 0 ) {
+           setDead(true);
+            System.out.printf("モンスター%sは倒れた。\n", getName());
         }
     }
 
