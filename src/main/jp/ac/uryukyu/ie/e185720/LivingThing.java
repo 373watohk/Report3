@@ -51,7 +51,7 @@ public class LivingThing {
     public void setDead(boolean dead) {
         this.dead = dead;
     }
-    
+
     public int damageVal(int damage) {
         hitPoint -= damage;
         return hitPoint;
