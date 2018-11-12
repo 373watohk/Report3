@@ -47,16 +47,11 @@ public class LivingThing {
         return hitPoint;
     }
 
-    public boolean getDead(){
 
-        return dead;
-    }
     public void setDead(boolean dead) {
         this.dead = dead;
     }
-    public void setHitPoint(int hitPoint) {
-        this.hitPoint = hitPoint;
-    }
+    
     public int damageVal(int damage) {
         hitPoint -= damage;
         return hitPoint;
